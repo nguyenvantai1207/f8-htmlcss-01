@@ -1,0 +1,34 @@
+1. margin vẫn hoạt động thẻ inline nhưng không hoạt động margin top or bottom.
+
+2. Dùng padding đẩy thì sẽ không gây ra hiện tượng margin-collapse
+
+3. flex, gap,  border-top-left-radius: 12px,border-top-right-radius: 12px.
+
+4. Hiển thị dấu 3 chấm khi nội dung quá dài:
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+5. Tạo biến dùng chung bằng class:
+
+    .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: var(--line-clamp, 2);-webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    5.1. Tạo tên class như một biến.
+    5.2. Nếu muốn áp dụng cho phần tử nào thì chèn tên biến class vào phần tử là được.
+    5.3.  var(--line-clamp, 2): tạo --line-clamp có giá trị mặc định là 2.
+    5.4. Nếu muốn thay đổi lại giá trị thì ta set --line-clamp như một biến css thông thường.
+    5.5. Ví dụ ta muốn set lại thành 3 dòng thì dùng "--line-clamp: 3".
+
+6. Nếu dòng chữ ngang quá dài và muốn xuống dòng dùng word-break: break-all;
+
+7. CRTL + [ hoặc CRTL + ]: thụt ra hoặc thụt vào 1 ô.
+
+8. CRTL + SHIFT + P: snippet: để tạo custom snippet.
+
+9. white-space: nowrap; 
