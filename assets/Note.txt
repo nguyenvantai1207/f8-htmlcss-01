@@ -32,3 +32,9 @@
 8. CRTL + SHIFT + P: snippet: để tạo custom snippet.
 
 9. white-space: nowrap; 
+
+10. scroll-behavior: smooth; thanh cuộn mượt hơn.
+
+11. set id và dùng href để di chuyển tới phần đó.
+
+12. Favicon
